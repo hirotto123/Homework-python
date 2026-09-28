@@ -2,7 +2,7 @@ class Solution(object):
     def rotateString(self, s, goal):
         returns = len(s)
         m = 0
-        while m>=returns:
+        while m<returns:
             if s == goal:
                 return True
             else:
