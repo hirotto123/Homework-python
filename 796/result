@@ -1,0 +1,14 @@
+class Solution(object):
+    def rotateString(self, s, goal):
+        returns = len(s)
+        m = 0
+        while m>=returns:
+            if s == goal:
+                return True
+            else:
+                    symbol = s[0]
+                    s = s[1:] + s[0]
+                    m+=1
+        return False                
+
+        
